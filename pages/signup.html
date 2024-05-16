@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Account - Rajdev Yadav</title>
+
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <h1> sign up form</h1>
+
+<body id="signup">
+    <div class="signup-container">
+
+        <div>
+            <img src="https://cdn.dribbble.com/users/1292677/screenshots/6624773/businessman.gif" alt="">
+        </div>
+
+
+        <div>
+            <h2>Create An Account </h2>
+
+            <div class="form">
+                <input type="text" name="name" placeholder="Enter Full Name" id="fullname">
+                <input type="text" name="userId" placeholder="Create User Id" id="userId">
+                <input type="password" name="password" placeholder="Enter Password" id="password">
+
+                <button id="submitBtn">Submit</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- javascript  -->
+    <script>
+
+        // selection of html elements
+        let submitBtn = document.getElementById("submitBtn");
+        let nameTag = document.getElementById("fullname");
+        let userIdTag = document.getElementById("userId");
+        let passwordTag = document.getElementById("password");
+
+
+       submitBtn.addEventListener("click", function(){
+        console.log(nameTag.value, userIdTag.value, passwordTag.value);
+       })
+
+    </script>
 </body>
+
 </html>
